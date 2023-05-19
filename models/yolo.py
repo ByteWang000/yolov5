@@ -340,6 +340,12 @@ def parse_model(d, ch):  # model_dict, input_channels(3)
             c2 = ch[f] * args[0] ** 2
         elif m is Expand:
             c2 = ch[f] // args[0] ** 2
+        elif m is SE:
+            c1 = ch[f]
+            c2 = args[0]
+            if c2 != no:
+                c2 =make_divisible(c2 * gw,8)
+            args = [c1, args[1]]
         else:
             c2 = ch[f]
 
