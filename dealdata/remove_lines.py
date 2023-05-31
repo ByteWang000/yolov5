@@ -51,11 +51,11 @@ def remove_lines_with_class2(input_folder, output_folder, class_id):
 
 
 # 设置输入文件夹和输出文件夹路径
-input_folder = 'E:\yolo\dealdata\label2'
-output_folder = 'E:\yolo\dealdata\label3'
+input_folder = 'C:/Users/ByteWang/Desktop/123/labels'
+output_folder = 'C:/Users/ByteWang/Desktop/123/456/'
 
 # 设置要删除的类别ID
-class_id_to_remove = 3
+class_id_to_remove = 1
 
 # 执行函数
 remove_lines_with_class2(input_folder, output_folder, class_id_to_remove)
